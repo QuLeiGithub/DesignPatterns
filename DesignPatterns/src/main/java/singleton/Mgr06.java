@@ -1,6 +1,13 @@
 package singleton;
 
+/**
+ * @author QuLei
+ */
 public class Mgr06 {
+    /**
+     * 不加volatile会发生指令重排序
+     */
+
     private static volatile Mgr06 INSTANCE;
 
     private Mgr06() {
